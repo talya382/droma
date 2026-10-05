@@ -12,11 +12,10 @@
         <fieldset>
             <legend>Personal Information</legend>
             <label for="name">Name:</label>
-            <input placeholder="Enter your name" type="text" id="name" name="name" required>
+            <input placeholder="Enter your name" type="text" id="name" name="name" minlength="2" required>
             <br>
-            <label for="password">Password:</label>
-            <input placeholder="Enter your password" type="password" id="password" name="password" minlength="8"
-                maxlength="20" required>
+            <label for="pon">pon:</label>
+            <input placeholder="Enter your pon" type="tel" id="pon" name="pon">
             </br>
             <br>
             <label for="email">Email:</label>
@@ -26,41 +25,47 @@
         </fieldset>
 
         <fieldset>
-            <legend>file,range</legend>
-            <label for="file">File:</label>
-            <input type="file" id="file" name="file">
-            <br>
-            <label for="range">Range:</label>
-            <input type="range" id="range" name="range" min="0" max="100" value="50">
-            <br>
-        </fieldset>
-        <fieldset>
-            <legend>Checkbox,Radio</legend>
-            <label for="radio">radio:</label>
-            <input type="radio" id="radio" name="size" value="small">
-            <label for="radio">small</label>
-            <input type="radio" id="radio" name="size" value="medium">
-            <label for="radio">medium</label>
-            <input type="radio" id="radio" name="size" value="large">
-            <label for="radio">large</label>
-            <br>
-            <label for="checkbox">checkbox:</label>
-            <input type="checkbox" id="checkbox" name="option1" value="option1">
-            <label for="checkbox">Option 1</label>
-            <input type="checkbox" id="checkbox" name="option2" value="option2">
-            <label for="checkbox">Option 2</label>
-            <input type="checkbox" id="checkbox" name="option3" value="option3">
-            <label for="checkbox">Option 3</label>
-            <br>
-        </fieldset>
-        <fieldset>
-            <legend>select</legend>
-            <label for="option">option</label>
-            <select id="option" name="option">
-                <option value="1">one</option>
-                <option value="2">two</option>
-                <option value="3">three</option>
+            <legend>Ticket & Workshops</legend>
+            <label for="ticket">Ticket type:</label>
+            <select id="ticket" name="ticket">
+                <option value="1">Student</option>
+                <option value="2">VIP</option>
+                <option value="3">Standard</option>
             </select>
+            <br>
+
+            <label for="checkbox">Workshops :</label>
+            <input type="checkbox" id="checkbox" name="option1" value="option1">
+            <label for="checkbox">Testing</label>
+            <input type="checkbox" id="checkbox" name="option2" value="option2">
+            <label for="checkbox"> Accessibility,</label>
+            <input type="checkbox" id="checkbox" name="option3" value="option3">
+            <label for="checkbox">Web Performance</label>
+            </br>
+
+            <br>
+            <label for="radio">Diet :</label>
+            <input type="radio" id="radio" name="size" value="small">
+            <label for="radio">Halal</label>
+            <input type="radio" id="radio" name="size" value="large">
+            <label for="radio">Kosher</label>
+            <input type="radio" id="radio" name="size" value="large">
+            <label for="radio">Vegan</label>
+            <input type="radio" id="radio" name="size" value="large">
+            <label for="radio">None</label>
+
+            <br>
+           
+        </fieldset>
+        <fieldset>
+            <legend>Payment Details</legend>
+            <label for="card-number">Card number:</label>
+            <input type="text" id="card-number" name="card-number" minlength="13" maxlength="19" required>
+
+            <br>
+            <label for="cvv">cvv:</label>
+            <input type="password" id="cvv" name="cvv" minlength="3" maxlength="4" required>
+            <br>
         </fieldset>
 
 
