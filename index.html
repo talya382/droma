@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input placeholder="Enter your name" type="text" id="name" name="name" required>
+            <br>
+            <label for="password">Password:</label>
+            <input placeholder="Enter your password" type="password" id="password" name="password" minlength="8"
+                maxlength="20" required>
+            </br>
+            <br>
+            <label for="email">Email:</label>
+            <input placeholder="Enter your email" type="email" id="email" name="email" required>
+            </br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>file,range</legend>
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file">
+            <br>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="100" value="50">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox,Radio</legend>
+            <label for="radio">radio:</label>
+            <input type="radio" id="radio" name="size" value="small">
+            <label for="radio">small</label>
+            <input type="radio" id="radio" name="size" value="medium">
+            <label for="radio">medium</label>
+            <input type="radio" id="radio" name="size" value="large">
+            <label for="radio">large</label>
+            <br>
+            <label for="checkbox">checkbox:</label>
+            <input type="checkbox" id="checkbox" name="option1" value="option1">
+            <label for="checkbox">Option 1</label>
+            <input type="checkbox" id="checkbox" name="option2" value="option2">
+            <label for="checkbox">Option 2</label>
+            <input type="checkbox" id="checkbox" name="option3" value="option3">
+            <label for="checkbox">Option 3</label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>select</legend>
+            <label for="option">option</label>
+            <select id="option" name="option">
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+            </select>
+        </fieldset>
+
+
+        <button type="submit">submit</button>
+    </form>
+</body>
+
+</html>
